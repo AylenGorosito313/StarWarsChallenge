@@ -1,0 +1,20 @@
+.divCentrado {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  flex-direction: column;
+}
+
+.metaContainer {
+  padding-top: 20px;
+  background: rgb(97 97 97 / 3%);
+  height: 100%;
+  min-width: 1200px;
+  overflow-y: hidden;
+}
+
+.title {
+  font-family: Poppins;
+  font-size: 30px;
+  color: aliceblue;
+}

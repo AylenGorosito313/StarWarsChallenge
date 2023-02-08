@@ -1,0 +1,77 @@
+.Layout {
+  display: flex;
+  width: 100%;
+
+  background: rgb(62 60 60 / 10%);
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  background-image: url("./assets/fondo.png");
+}
+
+.LayoutLanding {
+  display: flex;
+  position: absolute;
+  top: 0;
+
+  flex-direction: column;
+  gap: 100px;
+  width: 100%;
+  height: 100vh;
+  background: rgb(62 60 60 / 10%);
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  background: transparent;
+}
+
+.LandingBavkground {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  animation: rotBGimg 30s linear infinite;
+  background-image: url("./assets/fondo.png");
+}
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(10deg);
+  }
+}
+
+.landing {
+  display: flex;
+  width: 100%;
+
+  background: rgb(62 60 60 / 10%);
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  background-image: url("./assets/fondo.png");
+}
+
+.button {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #f3db52;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #f3db52;
+  background: #25252500;
+  box-shadow: 1px 1px #f3db52;
+  cursor: pointer;
+  margin: 35px 0;
+
+  animation: animate__fadeInDown; 
+  animation-duration: 4s
+}
+
+.button:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}

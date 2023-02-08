@@ -1,0 +1,145 @@
+
+.Div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 300px;
+  overflow-y: scroll;
+  justify-content: center;
+}
+
+.Div::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.Div::-webkit-scrollbar:vertical {
+  width: 4px !important;
+}
+
+.Div::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
+  display: none;
+}
+
+.Div::-webkit-scrollbar:horizontal {
+  height: 0%;
+}
+
+.Div::-webkit-scrollbar-thumb {
+  background-color: rgba(153, 145, 145, 0.616);
+  border-radius: 10px;
+}
+
+.Div::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+.divCover{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+}
+.DivResult {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  height: 100px;
+  justify-content: space-between;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 5px;
+}
+
+.DivStart{
+display: none;
+}
+
+.Name {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  color: rgb(255, 255, 255);
+}
+.info{
+    display: flex;
+  width: 300px;
+  padding-right: 10px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+   gap: 20px;
+}
+.p {
+  font-family: Poppins;
+  font-size: 12px;
+  margin: 0 auto;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.616);
+}
+
+.img {
+  width: 140px !important;
+  background-image: url("../../assets/stars.jpg");
+  height: 100%;
+}
+
+
+
+.spinner {
+    box-shadow: 0 0 0 7px  #f3db52, inset 0 0 0 1px #f3db52;
+    position: relative;
+    height: 40px;
+    width: 100px;
+    border-radius: 8px;
+    overflow: hidden;
+    animation: rotate_5132 6s linear infinite;
+  }
+  
+  .spinner:before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #f3db52;
+    animation: load_5123 6s linear infinite;
+  }
+  
+  @keyframes rotate_5132 {
+    0%,
+    42% {
+      transform: rotate(0deg);
+    }
+  
+    48%,
+    92% {
+      transform: rotate(180deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes load_5123 {
+    0% {
+      width: 0;
+    }
+  
+    40%,
+    50% {
+      width: 100%;
+    }
+  
+    90%,
+    100% {
+      width: 0;
+    }
+  }
+  
