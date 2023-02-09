@@ -1,13 +1,15 @@
 .Layout {
   display: flex;
   width: 100%;
-
   background: rgb(62 60 60 / 10%);
   justify-content: center;
   align-items: center;
   padding-bottom: 20px;
   background-image: url("./assets/fondo.png");
 }
+
+
+
 
 .LayoutLanding {
   display: flex;

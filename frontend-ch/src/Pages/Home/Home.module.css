@@ -18,3 +18,9 @@
   font-size: 30px;
   color: aliceblue;
 }
+.layout {
+  display: flex;
+  height: 60vh;
+  align-items: center;
+  gap: 60px;
+}

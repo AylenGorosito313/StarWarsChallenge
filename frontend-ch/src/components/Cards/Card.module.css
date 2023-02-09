@@ -4,10 +4,11 @@
     gap: 20px;
   }
   .button {
-    font-family: monospace;
-    font-size: 1.5rem;
+    font-family: Poppins;
+    font-size: 1rem;
     color: #f3db52;
-    text-transform: uppercase;
+    font-weight: 500;
+   
     padding: 10px 20px;
     border-radius: 10px;
     border: 2px solid #f3db52;
@@ -16,7 +17,14 @@
     cursor: pointer;
     margin: 35px 0;
   }
-  
+  .CentradoContainer{
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
   .button:active {
     box-shadow: none;
     transform: translate(3px, 3px);
@@ -36,7 +44,12 @@
   
   
   .divbutton {
-    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px
   }
   
   .p {
@@ -109,3 +122,38 @@
   }
   
   
+  .spinner {
+    width: 56px;
+    height: 56px;
+    display: grid;
+    border: 4.5px solid #0000;
+    border-radius: 50%;
+    border-color: #dbdcef #0000;
+    animation: spinner-e04l1k 1s infinite linear;
+  }
+  
+  .spinner::before,
+  .spinner::after {
+    content: "";
+    grid-area: 1/1;
+    margin: 2.2px;
+    border: inherit;
+    border-radius: 50%;
+  }
+  
+  .spinner::before {
+    border-color: #474bff #0000;
+    animation: inherit;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+  }
+  
+  .spinner::after {
+    margin: 8.9px;
+  }
+  
+  @keyframes spinner-e04l1k {
+    100% {
+      transform: rotate(1turn);
+    }
+  }

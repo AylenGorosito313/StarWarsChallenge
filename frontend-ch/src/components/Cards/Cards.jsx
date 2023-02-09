@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import style from "./Cards.module.css";
-import versus from "../../assets/vS.png";
-import Card from "./Card";
-import cover from "../../assets/stars.jpg";
+import cover from "../../assets/fondoBattle.png"
 import { getRandomIntInclusive } from "./randomNumber.js";
-export default function Cards({ data }) {
+export default function Cards({ data, NewSearch }) {
   console.log(data);
   const [Random, setRandom] = useState(0);
 
@@ -13,18 +11,16 @@ export default function Cards({ data }) {
   };
 
   let x_1 = getRandomIntInclusive();
-  let x_2 = getRandomIntInclusive();
-  console.log(x_1)
 
-  let obj_1 = [data[x_1]];
-  let obj_2 = [data[x_2]];
+  console.log(x_1);
+
+  let obj_1 = NewSearch !== -1 ? [data[NewSearch]] : [data[x_1]];
 
   return (
     <>
-      <div className={style.layout}>
+      <div className={style.CentradoContainer}>
         <div className={style.container}>
-          {obj_2[0] !== undefined || obj_1[0] !== undefined ? (
-            Random &&
+          {Random &&
             obj_1?.map((ele, index) => {
               return (
                 <>
@@ -51,26 +47,14 @@ export default function Cards({ data }) {
                   </div>
                 </>
               );
-            })
-          ) : (
-            <div> holi</div>
-          )}
+            })}
         </div>
-        <div>
-          <img src={versus} alt="" />
+        <div className={style.divbutton}>
+          <button className={style.button} onClick={handlerBattle}>
+            {" "}
+            Random Character{" "}
+          </button>
         </div>
-
-        <div >
-         <Card  obj_2={obj_2}  Random={Random} />
-      
-        </div>
-      </div>
-
-      <div className={style.divbutton}>
-        <button className={style.button} onClick={handlerBattle}>
-          {" "}
-          Random Battle{" "}
-        </button>
       </div>
     </>
   );
