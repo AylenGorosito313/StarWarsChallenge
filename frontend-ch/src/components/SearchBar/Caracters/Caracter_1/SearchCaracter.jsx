@@ -4,31 +4,31 @@ import CardSearch from "../../CardSearch";
 import Card from "../../../Cards/Card";
 export default function SearchCaracter({ data }) {
   console.log(data);
-  const [NewSearch, setNewSearch] = useState("");
+  // const [NewSearch, setNewSearch] = useState("");
+  const [SearchIndex, setSearchIndex] = useState("");
   const [Open, setOpen] = useState(false);
-  console.log(NewSearch);
-  let names = data && data?.map((ele) => ele.name.toLowerCase());
 
-  let index = names.indexOf(NewSearch?.toLowerCase());
-  console.log(index);
-  const handlerSearch = () => {
-    setOpen(!Open);
+  const handlerSearch = (event) => {
+    let names = data && data?.map((ele) => ele.name.toLowerCase());
+    let index = names.indexOf(event?.toLowerCase());
+    setSearchIndex(index);
   };
+
+  console.log(SearchIndex)
   return (
     <>
       <div className={style.CentradoContainer}>
-        <Card   data={data} NewSearch={index} />
+        <Card data={data} NewSearch={SearchIndex} />
         <div className={style.Container}>
-         
-            <div className={style.search}>
-              <input
-                onChange={(e) => setNewSearch(e.target.value)}
-                type="text"
-                className={style.search__input}
-                placeholder="Search ..."
-              />
-            </div>
-      
+          <div className={style.search}>
+            <input
+              onChange={(e) => handlerSearch(e.target.value)}
+              type="text"
+              className={style.search__input}
+              placeholder="Search ..."
+            />
+          </div>
+
           <div>
             <button onClick={handlerSearch} className={style.search__button}>
               <svg
@@ -51,4 +51,3 @@ export default function SearchCaracter({ data }) {
     </>
   );
 }
-
