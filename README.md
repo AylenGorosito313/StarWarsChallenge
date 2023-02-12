@@ -10,18 +10,18 @@ Este desafío es para validar tu habilidad como Frontend Software Engineering y 
 
 ## Steps 
 
-01. El title de la app debe ser: Star Wars Battle App✅
-02. Debe contener un componente Home✅
-03. El componente Home debe contener un NavBar, un Cards y un List  ✅
-04. El componente Cards debe estar dividido en dos y contiene en cada división el componente Card ✅
-05. El componente Card es un slide que muestra y oculta una card que contiene al menos 6 atributos del character, entre estos deben estar si o sí: image, name e id ✅
-06. El componente List se debe encontrar por debajo del componente cards✅
+01. El title de la app debe ser: Star Wars Battle App
+02. Debe contener un componente Home
+03. El componente Home debe contener un NavBar, un Cards y un List  
+04. El componente Cards debe estar dividido en dos y contiene en cada división el componente Card 
+05. El componente Card es un slide que muestra y oculta una card que contiene al menos 6 atributos del character, entre estos deben estar si o sí: image, name e id 
+06. El componente List se debe encontrar por debajo del componente cards
 
 ## Tareas
 
-01. Crear Random que es un botón selector random de un personaje de star wars ✅
-02. Crear Search que es un buscador y selector por nombre de un personaje de star wars✅
-03. Crear AllCharacters que es un botón que nos trae y muestra en el componente List el nombre de todos los personajes de nuestra AP✅
+01. Crear Random que es un botón selector random de un personaje de star wars 
+02. Crear Search que es un buscador y selector por nombre de un personaje de star wars
+03. Crear AllCharacters que es un botón que nos trae y muestra en el componente List el nombre de todos los personajes de nuestra AP
 
 ## Importante
 -   Recuerda de reutilizar componentes de ser necesario (no repetir código)
