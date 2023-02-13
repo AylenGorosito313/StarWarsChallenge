@@ -123,4 +123,7 @@
       height: 30px;
       width: 40px;
     }
+    .ContainerButton{
+      padding: 10px;
+    }
   }

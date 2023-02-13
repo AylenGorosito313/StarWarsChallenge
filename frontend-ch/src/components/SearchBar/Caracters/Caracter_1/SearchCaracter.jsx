@@ -29,7 +29,7 @@ export default function SearchCaracter({ data }) {
             />
           </div>
 
-          <div>
+          <div className={style.ContainerButton}>
             <button onClick={handlerSearch} className={style.search__button}>
               <svg
                 className={style.search__icon}

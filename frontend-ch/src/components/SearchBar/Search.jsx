@@ -25,6 +25,8 @@ const handlerSearch = ()=>{
           />
       
         </div>
+        
+        <div className={style.ContainerButton}>
         <button onClick={handlerSearch} className={style.search__button}>
             <svg
               className={style.search__icon}
@@ -36,6 +38,7 @@ const handlerSearch = ()=>{
               </g>
             </svg>
           </button>
+          </div>
         <button className={style.buttonAll} onClick={handlerAllcaracters}>All Caracters</button>
       </div>
 

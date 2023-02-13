@@ -108,6 +108,7 @@
   .search__button{
     height: 30px;
     width: 40px;
+   
   }
   .Container{
     gap: 30px;
@@ -117,5 +118,8 @@
     font-size: 12px;
     width: 100px;
     height: 40px;
+  }
+  .ContainerButton{
+    padding: 10px;
   }
 }
