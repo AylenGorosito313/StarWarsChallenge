@@ -59,7 +59,7 @@
 
 .Name {
   font-family: Poppins;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   margin: 0;
   color: rgb(255, 255, 255);
@@ -82,7 +82,7 @@
 }
 
 .img {
-  width: 140px !important;
+  width: 130px !important;
   background-image: url("../../assets/stars.jpg");
   height: 100%;
 }
