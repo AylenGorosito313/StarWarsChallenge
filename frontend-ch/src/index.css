@@ -68,7 +68,6 @@ button:focus-visible {
   }
 } */
 
-
 /* 
 body{
   margin: 0;
@@ -79,28 +78,24 @@ overflow-x: hidden;
 
 } */
 
-
-:root {
-  /* height: auto;
-  width: auto; */
+/* :root {
   font-family: Poppins, Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  /* position: relative; */
+
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #121212;
-overflow-x: hidden;
+  overflow-x: hidden;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
+} */
 
-}
-
-body{
+body {
   margin: 0;
   padding: 0;
-   background-image: url("./assets/fondo.png");
+  background-image: url("./assets/fondo.png");
   box-sizing: border-box;
 }
 
@@ -109,12 +104,13 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar:vertical {
-  width:8px;
+  width: 8px;
 }
 
-body::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+body::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
   display: none;
-} 
+}
 
 body::-webkit-scrollbar:horizontal {
   height: 5px;
@@ -127,5 +123,5 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-track {
-  border-radius: 10px;  
+  border-radius: 10px;
 }
