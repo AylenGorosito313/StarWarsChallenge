@@ -91,10 +91,10 @@
 
 @media (max-width: 700px) {
   .search__input{
-    width: 100px;
-    font-size: 14px;
+    width: 120px;
+    font-size: 12px;
     height: 40px;
-    padding: 0px 0px;
+    padding: 1px 1px;
   }
   .buttonAll{
     font-size: 14px;

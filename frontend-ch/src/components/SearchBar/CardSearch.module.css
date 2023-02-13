@@ -150,6 +150,7 @@
     width: 20px;
   }
   .DivResult {
+    justify-content: flex-start;
     height: 100px;
     width: 300px;
   }
