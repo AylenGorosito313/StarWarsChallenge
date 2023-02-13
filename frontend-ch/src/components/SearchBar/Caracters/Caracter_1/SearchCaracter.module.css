@@ -92,10 +92,13 @@
     cursor: pointer;
   }
 
+  .search__input::placeholder{
+    font-size: 12px;
+    padding: 10px;
+  }
 
 
-
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     .Container {display: flex;
     gap: 40px;
     justify-content: center;
