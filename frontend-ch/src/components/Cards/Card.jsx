@@ -9,8 +9,7 @@ export default function Card({ data, NewSearch }) {
   useEffect(() => {
     setRandom(false);
   }, [NewSearch]);
-console.log(NewSearch)
-  console.log(Random);
+
 
   const handlerBattle = () => {
     setRandom(true);
@@ -21,7 +20,7 @@ console.log(NewSearch)
   let obj_1 = Random  === true  &&  [data[x_2]]
   let obj_2 = NewSearch && [data[NewSearch]];
   // let obj_2 = NewSearch ? [data[NewSearch]] : [data[x_2]];
-  console.log(obj_2);
+
   return (
     <>
       <div className={style.CentradoContainer}>

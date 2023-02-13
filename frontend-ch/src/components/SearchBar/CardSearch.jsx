@@ -2,17 +2,16 @@ import React from "react";
 import style from "./CardSearch.module.css";
 import coverStart from "../../assets/Frame 1.png";
 export default function CardSearch({ NewSearch, data, allCaracters }) {
-  // console.log(data);
+
   let input = NewSearch.toLowerCase();
-  // console.log(allCaracters);
+
 
   let results =
     NewSearch &&
     data.find((ele) => ele.name.toLowerCase() === NewSearch.toLowerCase());
 
-  // console.log(results);
   let affiliation = results && results.affiliations.includes("Galactic Empire");
-  // console.log(affiliation);
+ 
   return (
     <>
       {results === "" && allCaracters === false ? (

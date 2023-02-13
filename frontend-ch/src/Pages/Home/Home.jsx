@@ -21,7 +21,7 @@ export default function Home() {
     GetInfo();
   }, []);
 
-  console.log(Api);
+
 
   return (
     <div className={style.metaContainer}>

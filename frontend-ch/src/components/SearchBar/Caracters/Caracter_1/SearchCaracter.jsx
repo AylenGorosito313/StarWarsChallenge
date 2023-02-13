@@ -3,8 +3,8 @@ import style from "./SearchCaracter.module.css";
 import CardSearch from "../../CardSearch";
 import Card from "../../../Cards/Card";
 export default function SearchCaracter({ data }) {
-  console.log(data);
-  // const [NewSearch, setNewSearch] = useState("");
+
+
   const [SearchIndex, setSearchIndex] = useState("");
   const [Open, setOpen] = useState(false);
 
@@ -14,7 +14,7 @@ export default function SearchCaracter({ data }) {
     setSearchIndex(index);
   };
 
-  console.log(SearchIndex)
+
   return (
     <>
       <div className={style.CentradoContainer}>
