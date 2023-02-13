@@ -10,7 +10,7 @@
   background: rgb(97 97 97 / 3%);
   height: 100%;
   max-width: 1200px;
-
+  overflow-y: hidden;
 }
 
 .title {
