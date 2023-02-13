@@ -38,4 +38,4 @@ Siendo el único endpoint el siguiente: https://akabab.github.io/starwars-api/ap
 
 ### Extras
 
--   No permitir que en una misma vista se enfrente el mismo personaje (que aparezca en ambos componentes) a la hora de buscar o seleccionar uno random. 
+-   No permitir que en una misma vista se enfrente el mismo personaje (que aparezca en ambos componentes) a la hora de buscar o seleccionar uno random.  

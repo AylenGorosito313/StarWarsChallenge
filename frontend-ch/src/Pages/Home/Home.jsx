@@ -26,14 +26,14 @@ export default function Home() {
   return (
     <div className={style.metaContainer}>
       <div className={style.divCentrado}>
-        <img src={Title} alt="a" />
+        <img  className={style.imgTitle} src={Title} alt="a" />
         {/* <h1 className={style.title}> Star Wars Battle App</h1> */}
         <div className={style.layout}>
           {/* <SearchCaracter2 data={Api} /> */}
 
           <SearchCaracter data={Api} />
           <div>
-            <img src={versus} alt="" />
+            <img src={versus} className={style.versus}  alt="" />
           </div>
           <SearchCaracter data={Api} />
         </div>

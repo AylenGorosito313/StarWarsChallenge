@@ -66,7 +66,7 @@ console.log(NewSearch)
             <>
               {obj_2[0] === undefined ? (
                 <div>
-                  <img className={style.img} src={cover} alt="nop" />
+                  {/* <img className={style.img} src={cover} alt="nop" /> */}
                 </div>
               ) : (
                 obj_2?.map((ele, index) => {

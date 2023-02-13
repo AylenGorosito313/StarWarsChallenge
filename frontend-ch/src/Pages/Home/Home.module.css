@@ -24,3 +24,22 @@
   align-items: center;
   gap: 60px;
 }
+
+
+@media (max-width: 500px) {
+  .layout {
+    height: auto;
+align-items: center;
+    gap: 0px;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  .versus {
+    padding: 40px;
+  }
+
+  .imgTitle {
+    width: 300px;
+    height: 100px;
+  }
+}
