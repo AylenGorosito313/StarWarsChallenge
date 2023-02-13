@@ -50,7 +50,7 @@
   .search__button {
     border: none;
     height: 40px;
-    width: 50px;
+    width: 40px;
     background-color: #3d3c3c49;
     border: 1px solid #f3db52;
     border-radius: 50%;
@@ -121,7 +121,7 @@
     }
     .search__button{
       height: 30px;
-      width: 40px;
+      width: 30px;
     }
     .ContainerButton{
       padding: 10px;
